@@ -1,0 +1,20 @@
+def gcd(n,m):
+    d = min (n, m)
+
+    while n % d != 0 or m % d != 0:
+        d = d - 1 
+
+    return d 
+
+def reduced(num,den):
+    d = gcd(num,den)
+    n = num/d
+    de = den/d
+
+    return f"{int(n)}/{int(de)}"
+
+def display(num,den):
+    r = reduced(num,den)
+    
+    return f"{num}/{den} can be reduced to {r}."
+print (display(4,100))

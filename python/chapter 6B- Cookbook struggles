@@ -1,0 +1,44 @@
+def reduce_measure (num,unit):
+    cups = 0
+    table = 0
+    tea = 0
+    answer = []
+
+    if(unit == "cups"):
+        cups = num
+        
+    elif(unit == "tablespoons"):
+        if(num >= 16):
+            cups = int(num/16) 
+            table = num - (cups * 16)
+            
+    else:
+      if(num > 3):
+        table = int(num/3)
+        tea = num - (table *3)
+        if(table >=16):
+          cups = int(table/16)
+          table = table - (cups*16)
+
+    if (cups != 0):
+        if (cups > 1):
+            answer.append(f"{cups} cups")
+        else:
+            answer.append(f"{cups} cup")
+
+    if (table != 0):
+        if (table > 1):
+            answer.append(f"{table} tablespoons")
+        else:
+            answer.append(f"{table} tablespoon")
+
+    if (tea != 0):
+        if (tea > 1):
+            answer.append(f"{tea} teaspoons")
+        else:
+            answer.append(f"{tea} teaspoon")
+      
+
+    return ", ".join(answer)
+
+print(reduce_measure(97, 'teaspoons'))
