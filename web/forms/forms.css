@@ -1,0 +1,18 @@
+body {
+    background-color: pink;
+}
+ label {
+    color: blue;
+ }
+
+ input {
+    color: rosybrown;
+ }
+
+ header {
+    text-align:center;
+ }
+#header2 {
+    text-align:center;
+    font-style: italic;
+}

@@ -1,0 +1,12 @@
+.city{
+    text-align:center;
+    color:aquamarine;
+}
+
+p.city {
+    color:blueviolet;
+}
+
+* {
+    text-align: center
+}
