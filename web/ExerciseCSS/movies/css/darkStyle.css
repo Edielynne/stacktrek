@@ -1,0 +1,38 @@
+/* dark table styles */
+/*Add the necessary styling to make it simlar to the given table*/
+
+table.dark {
+	border: 1px solid #1a1a1a;
+	background-color: black;
+	border-collapse:collapse;
+	table-layout: fixed;
+	
+}
+table.dark th {
+	border-bottom:1px solid #000;
+	text-align: left;
+	color:white;
+	background-color: rgb(31, 31, 31);
+
+}
+
+table.dark td {
+	border-right:1px solid #1a1a1a;
+	color: gray;
+	height: 40px;
+	font-size: 12px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 10px;
+}
+
+table.dark h4 {
+	margin-bottom: -2px;
+	margin-top: -2px;
+	color:white;
+	font-size: 15px;
+	
+	
+
+}
