@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+  
+
     <title>Swim and Waves</title>
     <head>
         <link rel="stylesheet" href="homepage.css">
@@ -27,12 +29,86 @@
                 <h1>Swim n` Waves</h1>
                 <p> lorem ipsum dolor es ton dets</p>
               </div>
-              
             </div>
             
         </div>
+
+        <div id="new">
+          <h1> What's New</h1>
+          <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="https://cf.shopee.ph/file/0048a46b878a6175440a86aee633cf46" >
+              <div class="text">Caption Text</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="https://cf.shopee.ph/file/a32cc34d36acf0e79a3adfb748b0e44d" >
+              <div class="text">Caption Two</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="https://cf.shopee.ph/file/b4deb3cf9ebc9b884248a87f06cdfcd5">
+              <div class="text">Caption Three</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+
+        </div>
        
+        
+          
+      </div>
+
+        <footer>
+          <p>Copyright 2020-2022. All Rights Reserved.</p>
+          <p><a href="https:/facebook.com/swimnwaves" Follow Us on facebook>Follow Us on Facebook</a></p>
+          <p><a href="mailto:Swim@email.com">swimnwaves@gmail.com</a></p>
+        </footer>
 
 
+
+        <script>
+          let slideIndex = 1;
+          showSlides(slideIndex);
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+          }
+          </script>
     </body>
 </html>
