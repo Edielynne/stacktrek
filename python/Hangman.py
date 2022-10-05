@@ -7,7 +7,7 @@ def countdown():
     global win 
     global wrong
     win = 0
-    timer= 5
+    timer= 30
     wrong = 0
     while timer:  
         mins, secs = divmod(timer, 60)
@@ -27,11 +27,11 @@ used = []
 start = ""
 
 
-#randmom picking of array 
+#random picking of array 
 rand = random.randint(0,len(word)-1) 
 guess = word[rand].lower() #word
 
-#declare staring blanks
+#declare stating blanks
 for i in range(len(guess)):
     start += "_"
 
@@ -64,7 +64,7 @@ while timer > 0 :
     if(wrong >4):
         timer=1
         count_thread.join()
-        breaky
+        break
     
     if(unlockedletter == guess ): 
         timer = 1
@@ -86,6 +86,7 @@ while timer > 0 :
         for i in range(len(guess)):
             if guess_array[i].lower() == user_answer:
                  del(blank[i])
+               
                  blank.insert(i, guess_array[i])         
         print("".join(blank))
 

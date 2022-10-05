@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<title>Countdown Timer</title>
+<style>
+    div{
+        background: gray;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+       
+    }
+
+    img {
+         width:100px;
+         height:100px;
+         
+    }
+    div h1 {
+        padding-top:80px;
+    }
+
+
+
+</style>
+
+<body>
+
+ 
+   <div id="countdown"></div>
+
+    <script>
+        var timeleft =10;
+       var downloadTimer = setInterval(function(){
+        if(timeleft <=0){
+            clearInterval(downloadTimer)
+            document.getElementById("countdown").innerHTML = `<h3>The rocket has been launched</h3><img src=https://www.freeiconspng.com/thumbs/rocket-png/red-rocket-png-5.png>`;
+        }
+            else{
+                document.getElementById("countdown").innerHTML = `<h1>${timeleft}</h1>`;
+            }
+            console.log (timeleft)
+            timeleft -= 1;},1000);
+            
+    </script>
+
+    
+
+</body>
+</html>

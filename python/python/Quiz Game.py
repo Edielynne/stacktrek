@@ -6,12 +6,15 @@ answer = ["b", "a", "c", "a"]
 choices = ["A. Mark zuckerberg, B. Charles babbage, C. Will smith", "A. Linus torvalds, B. Gabe newell, C. Steve jobs", "A. html/css, B. python, C. javascript", "A. if else, B. try/catch, C. while loop"]
 score = 0
 
+
+
 for i in range (len(question)):
     print(f"Question {i+1} : {question[i]}")
     print("-----------")
     print(f"Choices:" )
+
+
     c = choices[i].split(", ")
-    
     for y in range(len(c)):
         print(c[y]+"\n")
 

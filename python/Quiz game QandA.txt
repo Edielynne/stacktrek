@@ -4,14 +4,14 @@ choices: a.Mark zuckerberg b.Charles babbage c.Will smith
 
 question 2 = Who created linux operating system?
 answer: linus torvalds
-choices: a.Linus torvalds b.Gabe newell c.Steve jobs
+choices: A. Linus torvalds, B. Gabe newell, C. Steve jobs
 
 question 3 = What is the most common programming language?
 answer: Javascript
-choices: a.html/css b.python c.javascript
+choices: A. html/css, B. python, C. javascript
 
 question 4 = What kind of control structure will you use to determine/validate a specific answer? 
 answer: if else
-choices: a. if else b.try/catch c.while loop
+choices: A. if else, B. try/catch, C. while loop
 
 question 5 =  
