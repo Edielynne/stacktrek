@@ -7,6 +7,6 @@ const GCF = (a, b) => {
 	return GCF(b, a%b);
 
 };
-console.log (GCF (16,12))
-
+module.exports = {GCF}
+console.log (GCF)
 
